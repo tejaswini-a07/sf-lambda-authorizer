@@ -1,0 +1,9 @@
+function/model/HttpMethod.class
+function/exception/InvalidInputException.class
+function/LambdaAuthorizer.class
+function/App.class
+function/service/AuthPolicyService$1.class
+function/config/RedisConfig.class
+function/model/AuthPolicy.class
+function/LambdaAuthorizer$1.class
+function/service/AuthPolicyService.class
