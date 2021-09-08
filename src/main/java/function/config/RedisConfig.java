@@ -7,8 +7,8 @@ import redis.clients.jedis.Jedis;
 public class RedisConfig {
 
   private static Jedis client;
-  private static final String JWKS_HOST = "redisjwkstest.h8c63l.ng.0001.use2.cache.amazonaws.com";
-  private static final int JWKS_PORT = 6379;
+  private static final String JWKS_HOST = System.getenv("REDISHOST");
+  private static final int JWKS_PORT = Integer.parseInt(System.getenv("REDISPORT"));
 
   /** Get singleton Redis client. */
   public static Jedis getClient() {
