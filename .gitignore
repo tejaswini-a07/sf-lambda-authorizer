@@ -15,7 +15,7 @@ src/target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-test/.idea
+.idea
 *.iws
 *.iml
 *.ipr
