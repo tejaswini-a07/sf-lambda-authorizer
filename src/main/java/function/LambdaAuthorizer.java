@@ -46,9 +46,9 @@ public class LambdaAuthorizer implements RequestHandler<Map<String, String>, Map
     String keyId = getKeyIdFromToken(event.get("authorizationToken"));
     Set<RSAKey> publicKeys = getAllPublicKeys();
     RSAKey publicKey = null;
-    for (RSAKey rsaKey1 : publicKeys) {
-      if (rsaKey1.getKeyID().equals(keyId)) {
-        publicKey = rsaKey1;
+    for (RSAKey key : publicKeys) {
+      if (key.getKeyID().equals(keyId)) {
+        publicKey = key;
       }
     }
     if (publicKey == null) {
